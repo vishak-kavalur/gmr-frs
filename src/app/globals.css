@@ -1,0 +1,332 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #384248;
+  --primary: #ad8b3a;
+  --primaryTextColor: #FFFFFF;
+}
+
+main {
+  /* border: 1px solid #dadada; */
+  width: 100%;
+}
+
+html {
+  background-size: cover;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.layoutBody {
+  /* background-image: url("/bg.svg");
+  height: calc(100vh - 58px);
+  border: 1px solid #000; */
+}
+
+.header {
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background: #fff;
+}
+
+.footer {
+  font-size: 13px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* background: #5a72db; */
+  z-index: 999;
+}
+
+.footer p {
+  display: flex;
+  justify-content: center;
+  font-size: .9rem;
+  font-weight: 500;
+}
+
+.tajicon {
+  position: fixed;
+  bottom: -10px;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.ihclLogo {
+  width: 100px;
+  height: 55px;
+  padding: 15px;
+}
+
+.proteanLogo {
+  padding: 5px 10px;
+  width: 125px;
+}
+
+.proteanEventLogo {
+  width: 250px;
+}
+
+.tajHeader {
+  padding: 10px 15px;
+}
+
+.tajLogo {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+
+.cancelFab {
+  position: relative !important;
+  top: 33px;
+  height: 50px !important;
+  width: 50px !important;
+  right: -115px;
+}
+
+.capturedImage {
+  margin-left: -12px !important;
+  width:250px !important;
+  height: 250px !important;
+}
+
+.buttonHolder {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.successMessage {
+  margin-top: 30px !important;
+  line-height: 1.3 !important;
+}
+
+.dataTable {
+  width: 80%;
+  margin: 100px auto;
+  height: 100vh;
+}
+
+.dashboardBox {
+  background: #fff;
+  display: flex;
+  padding: 15px;
+}
+
+
+
+.transDateClass div {
+  max-height: 40px;
+}
+
+.transDateClass label:not(.MuiFormLabel-filled) {
+  top: -7px;
+}
+
+.font500 {
+  font-weight: 700;
+  margin-top: 0px;
+  font-size: 16px;
+}
+
+
+/* SVG Success Check Icon */
+.successCheck {
+  width: 75px;
+  display: block;
+  margin: 40px auto 0;
+}
+
+.path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 0;
+
+  &.circle {
+    -webkit-animation: dash 1.5s ease-in-out;
+    animation: dash 1.5s ease-in-out;
+  }
+
+  &.check {
+    stroke-dashoffset: -100;
+    -webkit-animation: dash-check 1s 1.35s ease-in-out forwards;
+    animation: dash-check 1s 1.35s ease-in-out forwards;
+  }
+}
+
+p.DialogText {
+  text-align: center;
+  margin: 20px 0 0px;
+  font-size: 1em;
+
+  &.success {
+    color: #05B7A5;
+  }
+}
+
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@-webkit-keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+
+@keyframes dash-check {
+  0% {
+    stroke-dashoffset: -100;
+  }
+
+  100% {
+    stroke-dashoffset: 900;
+  }
+}
+
+.biometrikLogo {
+  width: 165px;
+  height: auto;
+  padding: 10px 15px;
+}
+
+.nseitLogo {
+  width: 150px;
+  padding: 10px;
+}
+
+.mhvbLogo, .ttdLogo {
+  width: 60px;
+  padding: 5px;
+}
+
+.IDLogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+
+.IDBioLogo {
+  position: relative;
+  top: 20px;
+  width: 100px;
+}
+
+.MuiTab-root {
+  font-weight: bold;
+}
+
+th button.MuiButtonBase-root {
+  font-weight: bold;
+}
+
+#gender-label {
+  position: absolute;
+  top: -6px;
+}
+
+.upprpbLogo {
+    height: 60px;
+    width: auto;
+    padding: 0px;
+}
+
+.sabhivLogo {
+  height: 60px;
+  width: auto;
+  top: 3px;
+  position: relative;
+}
+
+.gmrLogo {
+  height: 40px;
+  width: auto;
+  top: 9px;
+  position: relative;
+  left: 10px;
+}
+
+.cscLogo {
+  height: 50px;
+  width: auto;
+  top: 4px;
+  position: relative;
+  left: 10px;
+}
+
+.iptsLogo {
+  /* height: 50px;
+  margin-left: 10px;
+  margin-top: 4px; */
+  width: 165px;
+  height: auto;
+  padding: 10px 15px;
+}
+
+.gray {
+  filter: grayscale(1);
+}
+
+.MuiDialogContent-root > .MuiBox-root {
+  padding: 0px;
+  border-radius: 16px;
+}
+
+.MuiDialogContent-root>.MuiBox-root>.MuiPaper-root {
+  background: transparent;
+  box-shadow: none;
+  --Paper-shadow: none;
+  /* border-radius: 16px; */
+}
+
+.MuiDialog-container>.MuiPaper-root {
+  background: transparent;
+  box-shadow: none;
+  --Paper-shadow: none;
+}
+
+.pathImage {
+  width: 75%;
+}
+
+.MuiPaper-elevation {
+  max-height:100% !important;
+  margin: 0 !important;
+}
