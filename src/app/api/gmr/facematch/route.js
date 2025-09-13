@@ -185,7 +185,7 @@ export async function POST(request) {
         db,
         collection,
         employee,
-        result,
+        result.result[0].subjects[0].similarity,
         liveImage,
         touchPoint,
         entryType,
